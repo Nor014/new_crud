@@ -1,0 +1,106 @@
+.new-post__header {
+  position: relative;
+}
+
+.new-post__nav {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  border-bottom: 1px solid lightgray;
+  list-style: none;
+}
+
+.new-post__item {
+  padding: 2px;
+  position: relative;
+}
+
+.new-post__item::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border: 1px solid lightgray;
+  background: #ffffff;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  visibility: hidden;
+}
+
+.new-post_item-active.new-post__item::before {
+  visibility: visible;
+}
+
+.new-post__btn {
+  font-size: 13px;
+  color: rgba(8, 97, 212, 0.993);
+  border-right: 1px solid lightgray;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.new-post__btn::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.publication.new-post__btn::before {
+  background: url('./pencil-for-school.svg') no-repeat center/contain;
+}
+
+.camera.new-post__btn::before {
+  background: url('./photo-camera.svg') no-repeat center/contain;
+}
+
+.video.new-post__btn::before {
+  background: url('./movie-symbol-of-video-camera.svg') no-repeat center/contain;
+}
+
+.new-post__main {
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.new-post__tab {
+  /* display: flex; */
+  justify-content: space-between;
+  display: none;
+}
+
+.new-post_tab-active {
+  display: flex;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid lightgray;
+  background: url('./hqdefault.jpg') no-repeat center/cover;
+}
+
+.new-post__inner {
+  flex: 1 1 auto;
+  text-align: center;
+  min-height: 50px;
+}
+
+.new-post__footer {
+  text-align: end;
+  border-top: 1px solid lightgray;
+  background: rgb(233, 233, 233);
+  margin: 0 -10px -10px -10px;
+  padding: 10px;
+}
+
+.new-post__textarea {
+  border: none;
+  padding: 10px;
+}

@@ -1,0 +1,97 @@
+.post {
+  position: relative;
+}
+
+.post:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.post_hide {
+  display: none;
+}
+
+.post__profile {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.post__avatar {
+  margin-right: 10px;
+}
+
+.post__content {
+  border-bottom: 1px solid lightgray;
+}
+
+.post__content {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.post__actions-items {
+  flex: 1 1 auto;
+  padding: 5px 0;
+}
+
+.post__commetns-inner {
+  border-top: 1px solid lightgrey;
+  margin: 0 -10px;
+  padding: 10px;
+  display: flex;
+}
+
+.avatar_size_small {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.post__input {
+  flex: 1 1 auto;
+  border-radius: 20px;
+  border: none;
+  background: #f2f3f5;
+  padding: 2px 10px;
+  outline: none;
+}
+
+.post__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.post__edit {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 -10px;
+  border-top: 1px solid lightgray;
+  padding: 10px 10px 5px 10px;
+}
+
+.post__edit-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.post__btn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.post__btn::before {
+  content: '';
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background: url('./frontal-thumb-up-.svg') no-repeat center/contain;
+}
+
